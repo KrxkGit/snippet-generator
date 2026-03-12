@@ -1,0 +1,5 @@
+{
+    "msg.success": "代码片段已复制到剪贴板！",
+    "msg.warn": "请先选择一段代码！",
+    "snippet.desc": "由 snippet-generator 生成"
+}
