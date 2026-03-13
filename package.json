@@ -2,7 +2,7 @@
   "name": "krxk-snippet-generator",
   "displayName": "Fast Snippet Generator",
   "description": "快速生成代码片段",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -21,16 +21,25 @@
   "contributes": {
     "commands": [
       {
-        "command": "snippet-generator.generate",
+        "command": "snippet-generator.copy",
         "title": "%command.generate.title%"
+      },
+      {
+        "command": "snippet-generator.placeholder",
+        "title": "%command.generate.placeholder%"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "when": "editorHasSelection",
-          "command": "snippet-generator.generate",
-          "group": "modification"
+          "command": "snippet-generator.copy",
+          "when": "editorHasSelection && resourceExtname != .code-snippets && editorLangId != snippets",
+          "group": "modification@1"
+        },
+        {
+          "command": "snippet-generator.placeholder",
+          "when": "editorHasSelection && (resourceExtname == .code-snippets || editorLangId == snippets)",
+          "group": "modification@1"
         }
       ]
     }

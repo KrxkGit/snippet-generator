@@ -1,3 +1,4 @@
 {
-  "command.generate.title": "Copy as VS Code Snippet"
+  "command.generate.title": "Copy as VS Code Snippet",
+  "command.generate.placeholder": "Insert Code Snippet Placeholder"
 }

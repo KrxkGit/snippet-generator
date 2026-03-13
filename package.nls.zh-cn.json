@@ -1,3 +1,4 @@
 {
-  "command.generate.title": "生成 VS Code 代码片段并复制"
+  "command.generate.title": "生成 VS Code 代码片段并复制",
+  "command.generate.placeholder": "插入代码片段占位符"
 }
